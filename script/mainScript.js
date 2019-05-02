@@ -66,7 +66,7 @@ var app = function () {
 
 $("main").onepage_scroll({
    sectionContainer: "section", // sectionContainer accepts any kind of selector.
-   easing: "cubic-bezier(0.175, 0.885, 0.420, 1.310)", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)".
+   easing: "cubic-bezier(0.68, -0.55, 0.265, 1.55)", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)".
    animationTime: 1000, // AnimationTime let you define how long each section takes to animate.
    pagination: false, // You can either show or hide the pagination. Toggle true for show, false for hide.
    updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
@@ -76,18 +76,8 @@ $("main").onepage_scroll({
    responsiveFallback: 0 // You can fallback to normal page scroll by defining the width of the browser in which you want the responsive fallback to be triggered. For example, set this to 600 and whenever the browser's width is less than 600, the fallback will kick in.
 });
 
-  //scroll down on click//
-  $(".mouseScroll").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#sec-b").offset().top - 0
-    }, 800);
-  });
 
-$("main .item").heightFull();
-$(window).resize(function() {
-  $("main .item").heightFull();
-});
-
+//cubic-bezier(0.175, 0.885, 0.420, 1.310)
 
 // Sec-a text animation
 (function() {
